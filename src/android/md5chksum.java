@@ -24,7 +24,7 @@ import android.net.Uri;
 public class md5chksum extends CordovaPlugin{
 
 	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
-		if (action.equals("file")){
+		if (action.equals("fileCheck")){
 			String path = args.getString(0);
 			this.runFile(path, callbackContext);
 			return true;
