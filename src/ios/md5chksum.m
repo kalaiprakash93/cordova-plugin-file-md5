@@ -21,7 +21,7 @@
 	return path;
 }
 
-- (void)file:(CDVInvokedUrlCommand*)command
+- (void)fileCheck:(CDVInvokedUrlCommand*)command
 {
 	[self.commandDelegate runInBackground:^{
 		CDVPluginResult* pluginResult = nil;
